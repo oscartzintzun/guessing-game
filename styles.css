@@ -1,0 +1,13 @@
+#header {
+  font-family: cursive; Verdana;
+  color: red;
+  border: dotted orange;
+}
+#family {
+  font-size: 30px;
+  color: red;
+}
+#paragraph {
+  text-align: center;
+  border: 20px solid red;
+}
