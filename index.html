@@ -4,14 +4,116 @@
     <title>code 201</title>
       <link rel="stylesheet" href="styles.css">
       <script type="text/javascript">
-        var userName = prompt("Please write your name:","");
-        console.log("User's name is "+userName);
-        var greeting = "Welcome " + userName + "!";
-        console.log("Getting today's date...");
-        var today = new Date();
-        greeting += "\n" + (today.getMonth() + 1) + "/" + today.getDate() + "/" + get.fullYear();
-        console.log("Full greeting " +greeting)
-        alert(greeting);
+var confirmQuiz = prompt('Hola!, bonjour, would you with to test your luck?? Answer using Y or N').toUpperCase();
+
+if(confirmQuiz === 'Y' || confirmQuiz === 'YES'){
+  console.log('Fantastic...');
+} else {
+  console.log('Please answer using Y/N or Yes/No. Remember to have fun...');
+}
+function catQuestion(){
+  var quizResponseOne = prompt('Does Kevin have a cat?').toUpperCase();
+
+  if(quizResponseOne === 'Y' || quizResponseOne === 'YES'){
+    console.log('Awesome! You are correct!');
+  } else if(quizResponseOne === 'N' || quizResponseOne === 'NO'){
+    console.log('No!. Kevin has a dog. Cats are the devil!');
+  } else {
+    console.log('Please answer using Y or N or Yes/No.');
+  }
+}
+function spainQuestion(){
+//Question Two
+  var quizResponseTwo = prompt('We are gonna play regardless, Do dogs like to play?').toUpperCase();
+
+  if(quizResponseTwo === 'Y' || quizResponseTwo === 'YES'){
+    console.log('Correct!');
+  } else if(quizResponseTwo === 'N' || quizResponseTwo === 'NO'){
+    console.log('Your right, sometimes they dont.');
+  } else {
+    console.log('Please answer using Y/N or Yes/No.');
+  }
+}
+spainQuestion();
+
+function mphQuestion(){
+// Question Three
+  var quizResponseThree = prompt('Has batman ever beaten superman?').toUpperCase();
+
+  if(quizResponseThree === 'Y' || quizResponseThree === 'YES'){
+    console.log('Yes! The Dark Night Returns');
+  } else if(quizResponseThree === 'N' || quizResponseThree === 'NO'){
+  } else {
+    console.log('Please answer using Y/N or Yes/No. come on...');
+  }
+}
+mphQuestion();
+
+function beerQuestion(){
+// Question Four
+  var quizResponseFour = prompt('Do you like cats?').toUpperCase();
+
+  if(quizResponseFour === 'Y' || quizResponseFour === 'YES'){
+    console.log('Good choice');
+  } else if(quizResponseFour === 'N' || quizResponseFour === 'NO'){
+    console.log('Everyones got opnions...');
+  } else {
+    console.log('Please answer using Y/N or Yes/No. Why are yo doing this to me');
+  }
+}
+beerQuestion();
+
+function kickQuestion(){
+// Question Five
+  var quizResponseFive = prompt('Is Coffee Better than tea?').toUpperCase();
+
+  if(quizResponseFive === 'Y' || quizResponseFive === 'YES'){
+    console.log('Everything is suubjective');
+  } else if(quizResponseFive === 'N' || quizResponseFive === 'NO'){
+    console.log('Thats what Im saying!');
+  } else {
+    console.log('Please answer using Y/N or Yes/No. Just do it. It will make everyone\'s life easier.');
+  }
+}
+kickQuestion();
+
+function numGame(){
+// Question Six Random Number
+  var correctAnswer = 6;
+
+  for (var i = 0; i < 4; i++){
+    var quizResponseSix = prompt('Bonus Round! Guess a number between 1 and 10');
+    var numberGuess = parseInt(quizResponseSix);
+    if (numberGuess === correctAnswer){
+      alert('You guessed correct!');
+      break;
+    } else if (numberGuess < correctAnswer){
+      alert('Too low! Guess again.');
+    } else if (numberGuess > correctAnswer){
+      alert('Too high!');
+    }
+  }
+}
+numGame();
+
+function statesQuestion(){
+//Question Seven States Question
+  var statesVisited = ['WASHINGTON', 'OREGON'];
+//number of guesses
+  for(var i = 0; i < 6; i++){
+    var quizResponseSeven = prompt('Which states has Kevin visited?').toUpperCase();
+    for(var ii = 0; ii < statesVisited.length; ii++){
+      if(quizResponseSeven === statesVisited[ii]);
+      alert('Good Job! ' + ii + ' is a state Kevin has visited');
+      i = 30;
+      //rightAnswer++;
+      break;
+    }
+  } if(i === 5){
+    alert('Your all out of guesses. The correct answers are ' + statesVisited);
+  }
+}
+
       </script>
   </head>
   <body>
@@ -24,7 +126,7 @@
       <p>A child asked me if what I wanted to be one I grew up, I told them I couldn't think about an answer at the time....
   I freeze, with reality. This kid then looked up to me--eyes with naivety--and said,<br> "I want to be a <a href="https://www.firetrucks.com/" target="_blank">firetruck</a>."</p>
   <div class="photo">
-    <img src="https://i.ytimg.com/vi/B5FzlcfeJqc/maxresdefault.jpg" alt="https://upload.wikimedia.org/wikipedia/commons/d/d0/X-Ladder_1_105'_Pierce_Arrow.JPG" Height="90px" width="150" align="middle">
+    <img src="https://i.ytimg.com/vi/B5FzlcfeJqc/maxresdefault.jpg" alt="rushmore-poster.jpg" Height="90px" width="150" align="middle">
   </div>
       <p>While we are on the topic <span style="color: red">Firetrucks</span>, let's talk about the definition of a firetruck</p>
       <br><em><span style="color: red">Firetruck</span></em>: An automotive vehicle equipped with firefighting apparatus
