@@ -11,7 +11,18 @@ if(confirmQuiz === 'Y' || confirmQuiz === 'YES'){
 } else {
   console.log('Please answer using Y/N or Yes/No. Remember to have fun...');
 }
+function catQuestion(){
+  var quizResponseOne = prompt('Are you ready?').toUpperCase();
 
+  if(quizResponseOne === 'Y' || quizResponseOne === 'YES'){
+    console.log('Awesome! You are correct!');
+  } else if(quizResponseOne === 'N' || quizResponseOne === 'NO'){
+    console.log('We are doing it so jstu suck it up pal');
+  } else {
+    console.log('Please answer using Y or N or Yes/No.');
+  }
+}
+function spainQuestion(){
 //Question Two
   var quizResponseTwo = prompt('We are gonna play regardless, Do dogs like to play?').toUpperCase();
 
@@ -25,7 +36,7 @@ if(confirmQuiz === 'Y' || confirmQuiz === 'YES'){
 }
 spainQuestion();
 
-function batmanQuestion(){
+function mphQuestion(){
 // Question Three
   var quizResponseThree = prompt('Has batman ever beaten superman?').toUpperCase();
 
@@ -38,7 +49,7 @@ function batmanQuestion(){
 }
 mphQuestion();
 
-function catQuestion(){
+function beerQuestion(){
 // Question Four
   var quizResponseFour = prompt('Do you like cats?').toUpperCase();
 
@@ -52,7 +63,7 @@ function catQuestion(){
 }
 beerQuestion();
 
-function teaQuestion(){
+function kickQuestion(){
 // Question Five
   var quizResponseFive = prompt('Is Coffee Better than tea?').toUpperCase();
 
@@ -84,6 +95,7 @@ function numGame(){
   }
 }
 numGame();
+
 
       </script>
   </head>
