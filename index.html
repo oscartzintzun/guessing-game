@@ -11,18 +11,7 @@ if(confirmQuiz === 'Y' || confirmQuiz === 'YES'){
 } else {
   console.log('Please answer using Y/N or Yes/No. Remember to have fun...');
 }
-function catQuestion(){
-  var quizResponseOne = prompt('Does Kevin have a cat?').toUpperCase();
 
-  if(quizResponseOne === 'Y' || quizResponseOne === 'YES'){
-    console.log('Awesome! You are correct!');
-  } else if(quizResponseOne === 'N' || quizResponseOne === 'NO'){
-    console.log('No!. Kevin has a dog. Cats are the devil!');
-  } else {
-    console.log('Please answer using Y or N or Yes/No.');
-  }
-}
-function spainQuestion(){
 //Question Two
   var quizResponseTwo = prompt('We are gonna play regardless, Do dogs like to play?').toUpperCase();
 
@@ -36,7 +25,7 @@ function spainQuestion(){
 }
 spainQuestion();
 
-function mphQuestion(){
+function batmanQuestion(){
 // Question Three
   var quizResponseThree = prompt('Has batman ever beaten superman?').toUpperCase();
 
@@ -49,7 +38,7 @@ function mphQuestion(){
 }
 mphQuestion();
 
-function beerQuestion(){
+function catQuestion(){
 // Question Four
   var quizResponseFour = prompt('Do you like cats?').toUpperCase();
 
@@ -63,7 +52,7 @@ function beerQuestion(){
 }
 beerQuestion();
 
-function kickQuestion(){
+function teaQuestion(){
 // Question Five
   var quizResponseFive = prompt('Is Coffee Better than tea?').toUpperCase();
 
@@ -95,24 +84,6 @@ function numGame(){
   }
 }
 numGame();
-
-function statesQuestion(){
-//Question Seven States Question
-  var statesVisited = ['WASHINGTON', 'OREGON'];
-//number of guesses
-  for(var i = 0; i < 6; i++){
-    var quizResponseSeven = prompt('Which states has Kevin visited?').toUpperCase();
-    for(var ii = 0; ii < statesVisited.length; ii++){
-      if(quizResponseSeven === statesVisited[ii]);
-      alert('Good Job! ' + ii + ' is a state Kevin has visited');
-      i = 30;
-      //rightAnswer++;
-      break;
-    }
-  } if(i === 5){
-    alert('Your all out of guesses. The correct answers are ' + statesVisited);
-  }
-}
 
       </script>
   </head>
